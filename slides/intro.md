@@ -47,11 +47,11 @@ src="https://youtube.com/embed/S9JGmA5_unY?autoplay=0&controls=0&showinfo=0&auto
 
 - https://observablehq.com/@jimbojw/grokking-bip39
 
-![bip39](/assets/seed_words.png)
+![bip39](assets/seed_words.png)
 
 ---
 
-![bip39](/assets/seed_words.png)
+![bip39](assets/seed_words.png)
 
 ---
 
@@ -109,22 +109,22 @@ src="https://youtube.com/embed/S9JGmA5_unY?autoplay=0&controls=0&showinfo=0&auto
 
 ---
 <section>
-  <img src="/assets/IMG_20220501_211152.jpg" />
+  <img src="assets/IMG_20220501_211152.jpg" />
 </section>
 <section>
-  <img src="/assets/IMG_20220501_212340.jpg" />
+  <img src="assets/IMG_20220501_212340.jpg" />
 </section>
 <section>
-  <img src="/assets/IMG_20220501_213251.jpg" />
+  <img src="assets/IMG_20220501_213251.jpg" />
 </section>
 <section>
-  <img src="/assets/IMG_20220501_214258.jpg" />
+  <img src="assets/IMG_20220501_214258.jpg" />
 </section>
 <section>
-  <img src="/assets/IMG_20220501_215235.jpg" />
+  <img src="assets/IMG_20220501_215235.jpg" />
 </section>
 <section>
-  <img src="/assets/SHORT.png" />
+  <img src="assets/SHORT.png" />
 </section>
 ---
 
