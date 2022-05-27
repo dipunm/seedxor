@@ -10,6 +10,7 @@ You can see a live version of this presentation here: <https://www.dipunmistry.c
 
 - [Dice XOR worksheet (24 words)](assets/dice-xor-24words-a4.pdf)
 - [Dice XOR worksheet (12 words)](assets/dice-xor-12words-a4.pdf)
+- [Background](assets/background.md)
 - [Instructions](assets/dice-xor-instructions.md)
 
 #### A python script that can help with the last word:
