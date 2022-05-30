@@ -2,9 +2,15 @@
 
 This is a guide on how to use the dice-xor worksheet.
 
-To understand the motivation behind this tool,and how you could use it to secure your bitcoin, check out [background.md](background.md).
+To understand the motivation behind this tool,and how you could use it to secure your bitcoin, please check out [background.md](background.md).
 
 ## Instructions
+
+Using one of the provided worksheets, you will produce two BIP-39 seed phrases which combine to produce a third BIP-39 seed phrase. The third seed phrase will be used by your Bitcoin wallet, while the first two will be used as part of your backup solution.
+
+If you already have a seed phrase provided by your wallet, you may choose to use the worksheet to split it into two new seed phrases for your backup solution.
+
+> Be sure to destroy any physical paper trails of the seed phrase used by your Bitcoin wallet to ensure the security of your wallet.
 
 ### You need:
 - One or more dice
@@ -12,6 +18,10 @@ To understand the motivation behind this tool,and how you could use it to secure
 - A pen or pencil
 
 This guide focuses on the 24 word version of the worksheet for brevity, but will explain certain important differences between this and the 12 word variant.
+
+> NOTE: ALWAYS DOUBLE CHECK YOUR WORK. After completing, redo the lookup processes again to verify that you get the same answers as before.
+
+> NOTE: BE SURE TO DESTROY THE WORKSHEET AND ANY EVIDENCE OF YOUR FINAL SEED PHRASE.
 
 ### The word list
 

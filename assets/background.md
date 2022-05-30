@@ -1,16 +1,16 @@
 ## Motivation
 
-When you set up a self-custodial wallet, you are usually asked to create a backup of your private key.
+When you set up a self-custodial wallet, you are usually asked to create a backup of your extended private key in the form of 12 or 24 words.
 
-Unfortunately, not much advice is given as to how we should write down and store our backups.
+Unfortunately, not much advice is given as to _how_ and _where_ we should create and store our backups.
 
 If we make only a single backup, we have a chance of losing or accidentally destroying the backup; this means we could lose access to the bitcoin that we saved.
 
-If we make multiple backups, we increase the odds of leaking our backup, or having a copy stolen; this means we someone could take the bitcoin that we saved.
+If we make multiple backups, we increase the odds of leaking our backup, or having a copy stolen; this means someone could take the bitcoin that we saved.
 
 A single 24 word seed phrase is like a hot potato, and most _**naive**_ attempts to split a backup into multiple parts will compromise our security ([Why is seed splitting a bad idea? - youtube video](https://www.youtube.com/watch?v=p5nSibpfHYE)), but what if we could split our secret into multiple parts without compromising on security?
 
-> Note: Shamir's secret sharing scheme (aka SSSS) is a good way to split a secret without compromising on security as explained by Andreas Aantonopolous in the video linked above, but this method is simpler and can be mostly done with a dice, pen and paper.
+> Note: Shamir's secret sharing scheme (aka SSSS) is a good way to split a secret without compromising on security as explained by Andreas Aantonopolous in the video linked above, but the XOR method is simpler and can be done mostly with a dice, pen and paper.
 
 By splitting a secret **securely**, when combined with **isolated domains**, we gain the ability to create multiple backups with less concern for leakage or theft.
 
@@ -40,14 +40,36 @@ When considering a backup strategy for your bitcoin wallet, any written or store
 
 By keeping your wallet's private key ephemeral, you remove this single point of failure, and any chance of stealing your funds, now relies on an attacker being able to find one of each of your backups across your isolated domains.
 
-## Seed splitting vs Multisig
+## XOR Seed splitting vs Multisig
 
-TODO: Explain multi-sig is better, but more complicated
+Let's be clear, from a technical security point of view, Multisig is better.
 
-## Hardware wallets
+That said, the fact that it requires two signing devices and two rounds of signing makes it feel convoluted and complicated for a single user. This has to be done every time you spend.
 
-TODO: Explain harware wallets for convenience, only if necessary, XPUB for extra security
+By contrast, seed splitting allows us to keep using a more convenient setup for personal use, and provides the extra security only for our backups, recovery plans, and inheritance plans.
+
+When we set up our wallets, we have to write down our seed phrase. To many, it can feel like the backup is our most vulnerable point of failure, if it can be easily stolen, copied, lost or damaged, then XOR seed splitting will flip the table; the wallet is now our most vulnerable point of failure, so we can now focus on finding our sweet spot between security and convenience with our spending wallet.
+
+## XPUBs and Hardware wallets
+
+For a long term pot which will act as a retirement plan, we don't necessarily need a spending plan, we can create our recovery setup, ensure it is secure and leave it.
+
+If we need to add to the pot over time, we can use a hardware wallet, or a carefully secured device (such as an old laptop that has been factory reset and has no internet or wireless connectivity enabled), to create ourselves an XPUB file.
+
+An XPUB file provides us an extended public key. This key allows wallets to show our balance and our transaction history, to reveal fresh receive addresses, and to create unsigned transactions. We can import it into wallets such as BlueWallet or Sparrow Wallet.
+
+Once we have our XPUB, we can use this to monitor our bitcoin, and to add to it without ever touching our backups.
+
+If we DO want to spend from this wallet periodically, we can use a hardware wallet. A good hardware wallet is air-gapped, pin protected, and will allow you to see and verify your transactions before you sign them.
+
+Again, using an XPUB file, we can do most of the things we want to do with our wallet without ever touching the hardware wallet, and we will only need to use the hardware wallet when we wish to withdraw from our wallet.
 
 ## Backing up an existing seed vs creating a new seed
 
-TODO: Describe benefit of dice roll and how to use your own seed in wallets.
+When we create a new wallet, most applications will generate an extended private key for you using a _pseudo-random_ number generator (PRNG).
+
+Unfortunately, it is difficult to tell if the extended private key has been generated maliciously due to compromised hardware, malicious software or viruses. For this reason, it is recommended to roll your own key where possible.
+
+Many wallets that allow you to "restore a wallet" allow you to enter your own seed phrase in the form of 12 or 24 words. Using a dice is a much more reliable way to produce a random extended private key and it is recommended to provide your own seed phrase if your wallet supports it.
+
+If your wallet does not support this, you can still use XOR seed splitting to create a robust backup.
