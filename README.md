@@ -4,6 +4,8 @@ This presentation was built using [reveal.js](https://revealjs.com/).
 
 You can see a live version of this presentation here: <https://www.dipunmistry.co.uk/seedxor/>
 
+Watch the presentation here: <https://youtu.be/w9N14UuUtzU>
+
 ## Other Resources
 
 #### Worksheet
