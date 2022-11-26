@@ -45,7 +45,7 @@ The other tables below are lookup tables that will help us as we continue throug
 
 ### Rolling dice
 
-The first thing we need to do, is to roll a die 132 times (roll 70 times for the 12 word variant). An 8 sided die is technically fairer, but a 6 sided die will do fine too.
+The first thing we need to do, is to roll a die 140 times (roll 70 times for the 12 word variant). An 8 sided die is technically fairer, but a 6 sided die will do fine too.
 
 If we have multiple dice, we can speed up the process by rolling them together.
 
