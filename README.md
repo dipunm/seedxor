@@ -30,6 +30,7 @@ However, keep in mind that with convenience, you rely on these manufacturers to 
 - ColdCard <https://seedxor.com/>
     - Allows splitting and combining on device.
     - [WIP] Allows keeping one part on an SD Card to be combined when signing <https://github.com/Coldcard/firmware/pull/94>
+- BIP39-XOR <https://github.com/GregTonoski/BIP39-XOR>
 - SeedSigner [WIP] <https://github.com/SeedSigner/seedsigner/issues/43>
 
 > If you know of other software/hardware that provides Seed XOR features, feel free to create an issue or pull request.
