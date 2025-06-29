@@ -47,6 +47,15 @@ The other tables below are lookup tables that will help us as we continue throug
 
 The first thing we need to do, is to roll a die 140 times (roll 70 times for the 12 word variant). An 8 sided die is technically fairer, but a 6 sided die will do fine too.
 
+> [!TIP]
+> When using 6-sided dice, this method introduces a small amount of bias due to uneven probabilities.  
+> The actual entropy in your seed phrase will be slightly below the theoretical maximum:  
+> – ~127.22 bits for a 12-word seed (vs. 128 bits)  
+> – ~254.44 bits for a 24-word seed (vs. 256 bits)  
+>  
+> This difference is negligible for practical security.  
+> If you want to maximize entropy, consider using 8-sided dice.
+
 If we have multiple dice, we can speed up the process by rolling them together.
 
 As we roll the dice, write the results in the `Rolls` row in the `A` section of the table. Put exactly 6 outcomes in each column.
@@ -71,7 +80,7 @@ For example, assuming I am using a 6 sided die, based on the above rolls: `3,3,5
 ---
 A42
 ```
-
+ 
 Continue this process until we have a set of codes for seed words `A`. Again, the 24th word will have a single digit code for now.
 
 If you are using the 12 word variant, you will have a 2 digit code for the 12th word.
