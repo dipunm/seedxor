@@ -32,6 +32,27 @@ When splitting your secrets, it is important to keep each part within separate d
 
 You should also have a way to know if any of your backups in each domain has been compromised.
 
+## Quick thought experiment
+Imagine you have two keys:
+
+1. Multiple copies of Key A are stored at home, in the garden, in your car and at work.
+2. Copies of Key B are stored in safety deposit boxes in 3 different locations.
+
+The following risks are mitigated:
+
+1. An attacker breaks into your car. They found Key A, but even if they break into your home, they will never find Key B.
+2. The government raids local banks and an officer steals Key B. They may know who you are, and may attempt to break into your home to find Key A. Be aware.
+
+In either case, the discovery of either Key A or Key B does not present an immediate threat to your funds 👍
+
+However, the chances of your being targeted for a possible Key B has now increased, and the consequence of someone discovering Key B is much more likely to present an immediate threat to your funds ⚠️
+
+To summarise, this setup affords you TIME ⏱️. You should still stay aware of your backup locations and whether they might have been compromised. For example, if you kept a key at your workplace and there was recently a break-in, consider the key compromised.
+
+If you suspect that your keys have been compromised, you should create a new wallet, move your funds as soon as possible and then recreate your seedxor setup. You should also be more concious of risks to the copies of your other key until you have done so.
+
+Seedxor is not limited to just 2 fragments. You could split your key into 3 or 4 keys before distributing them to different locations. Although this increases security, it also increases the complexity of your setup and the need to identify more isolated domains.
+
 ## An ephemeral private key
 
 An ephemeral private key, is one that exists temporarily, but is then forgotten or destroyed.
