@@ -59,11 +59,13 @@ An ephemeral private key, is one that exists temporarily, but is then forgotten 
 
 When considering a backup strategy for your bitcoin wallet, any written or stored record of your wallet's private key is a single point of failure; if it were to get leaked or fall into the hands of a criminal, they would have full access to steal your bitcoin!
 
-By keeping your wallet's private key ephemeral, you remove this single point of failure, and any chance of stealing your funds, now relies on an attacker being able to find one of each of your backups across your isolated domains.
+By keeping your wallet's private key ephemeral, you remove this single point of failure, and any chance of stealing your funds, now **exclusively** relies on an attacker being able to compromise your keys across your isolated domains.
+
+Note, that if your wallet is HOT, then your private key is not ephemeral as there still exists a record of your sensitive private key to steal. Furthermore, as a hot record, it exists or has existed on a device that can be remotely compromised by a hacker.
 
 ## XOR Seed splitting vs Multisig
 
-Let's be clear, from a technical security point of view, Multisig is better.
+Let's be clear, from a technical security point of view, Multisig is an objectively more secure solution. It is also becoming easier to implement (although not necessarily cheaper) over time.
 
 That said, the fact that it requires two signing devices and two rounds of signing makes it feel convoluted and complicated for a single user. This has to be done every time you spend.
 
